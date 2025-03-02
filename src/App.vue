@@ -36,7 +36,7 @@ onMounted(() => {
 <template>
   <div class="bg-cover w-screen min-h-screen bg-gradient-to-r from-[#330831] to-[#134b75] py-15 text-white">
     <div class="flex items-center justify-center">
-      <img class="h-[180px]" src="/icon.png" />
+      <img class="h-[180px]" src="/HeartConLogo_2025.png" />
     </div>
     <div class="py-2 xs:text-[4rem] lg:text-[1.5rem] grid grid-cols-1 lg:grid-cols-8 gap-3 lg:px-[6rem]">
       <button @click="$router.push('/')">

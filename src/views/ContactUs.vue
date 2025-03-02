@@ -6,13 +6,20 @@
       Contact Us
     </div>
     <div class="px-[5rem] lg:px-[10rem] text-center">
+      <div class="font-bold py-8 xs:text-[3.6rem] lg:text-[1.2rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)]  [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]">
+        <div>If you have any questions or suggestions, please email to us:</div>
+        <div class="underline xs:text-[3.8rem] lg:text-[1.5rem]" @click="openMail('Torontoheartcon@gmail.com<')">Torontoheartcon@gmail.com</div>
+      </div>
+      <div class="font-bold text-center py-6 xs:text-[3.8rem] lg:text-[1.5rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)]  [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]">
+        OR
+      </div>
       <div
-        class="font-bold xs:text-[3.6rem] lg:text-[1.2rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)]  [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+        class="xs:text-[3.6rem] lg:text-[1.2rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)]  [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
       >
         Feel free to comments and give any suggests for better in Toronto Heartcon and the website.
       </div>
       <div
-        class="font-bold xs:text-[3.6rem] lg:text-[1.2rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)]  [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+        class="xs:text-[3.6rem] lg:text-[1.2rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)]  [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
       >
         We will all to review and answer your questions.
       </div>
@@ -121,6 +128,10 @@ async function loadFoundersData() {
   )
 
   founderDatas.value = data.list
+}
+
+function openMail(email: string) {
+  window.location.href = `mailto:${email}`
 }
 
 async function submitSendData() {
